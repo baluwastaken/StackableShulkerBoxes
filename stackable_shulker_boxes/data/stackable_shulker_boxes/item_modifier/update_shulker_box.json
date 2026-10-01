@@ -1,19 +1,19 @@
 {
-	"function": "minecraft:filtered",
-	"item_filter": {
-		"items": "#minecraft:shulker_boxes",
-		"predicates": {
-			"minecraft:container": {
-				"items": {
-					"size": 0
-				}
-			}
-		}
-	},
-	"on_pass": {
-		"function": "minecraft:set_components",
-		"components": {
-			"minecraft:max_stack_size": 64
-		}
-	}
+  "item_filter": {
+    "items": "#minecraft:shulker_boxes",
+    "predicates": {
+      "minecraft:container": {
+        "items": {
+          "size": 0
+        }
+      }
+    }
+  },
+  "on_pass": {
+    "components": {
+      "minecraft:max_stack_size": 64
+    },
+    "type": "minecraft:set_components"
+  },
+  "type": "minecraft:filtered"
 }
