@@ -1,27 +1,27 @@
 {
-	"criteria": {
-		"invalid_shulker_box_in_inventory": {
-			"trigger": "minecraft:inventory_changed",
-			"conditions": {
-				"items": [
-					{
-						"items": "#minecraft:shulker_boxes",
-						"components": {
-							"minecraft:max_stack_size": 1
-						},
-						"predicates": {
-							"container": {
-								"items": {
-									"size": 0
-								}
-							}
-						}
-					}
-				]
-			}
-		}
-	},
-	"rewards": {
-		"function": "stackable_shulker_boxes:update_inventory"
-	}
+  "criteria": {
+    "invalid_shulker_box_in_inventory": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "#minecraft:shulker_boxes",
+            "components": {
+              "minecraft:max_stack_size": 1
+            },
+            "predicates": {
+              "minecraft:container": {
+                "items": {
+                  "size": 0
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "stackable_shulker_boxes:update_inventory"
+  }
 }
